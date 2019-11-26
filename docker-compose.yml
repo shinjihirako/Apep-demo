@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apepmediamicroservice:
+    image: ${DOCKER_REGISTRY-}apepmediamicroservice
+    build:
+      context: .
+      dockerfile: ApepMediaMicroService\Dockerfile
